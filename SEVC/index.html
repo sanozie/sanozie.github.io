@@ -31,9 +31,9 @@
      <!--sdgWheelDiv contains wheel-->
      <div class = "container-fluid" id = "sdgWheelDiv">
           <div id = "wheelRow" class = "row justify-content-center">
-               <div id = "wheelDiv" class="col-lg-6 d-none d-lg-block">
+               <div id = "wheelDiv" class="col-lg-6 d-none d-lg-block position-relative">
                     <!--img and map obtained from SDG website-->
-                    <img id = "sdgwheel" class = "img-fluid" usemap = "#image-map" src = "./imgs/sdgwheelnumbers.png"/>
+                    <img id = "sdgwheel" class = "img-fluid position-relative" usemap = "#image-map" src = "./imgs/sdgwheelnumbers.png"/>
                     <map name="image-map">
                          <area  title="1" coords="388,170,388,13,493,33,438,181" shape="poly">
                          <area  title="2" coords="457,188,512,42,607,103,505,217,484,201,471,194" shape="poly">
@@ -58,7 +58,7 @@
                     <script>
                          $('img[usemap]').rwdImageMaps();
                     </script>
-                    <div class = "row justify-content-center" id = "chooseText">
+                    <div class = "row justify-content-center position-absolute" id = "chooseText">
                          <div id = "namePaste" class = "text-center">
                               <h3 class = "whiteText" id = "wheelText">CHOOSE<br/> <span id = "whiteTextSize1">YOUR</span><br/> <span id = "whiteTextSize1">GOAL</span><br/><span id = "smallText">Hover to view projects</span></h3>
                          </div>
