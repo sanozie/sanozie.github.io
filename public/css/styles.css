@@ -6,52 +6,65 @@
 @import url("https://fonts.googleapis.com/css?family=Anton&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Kodchasan&display=swap");
 @font-face {
-  font-family: "strong_glasgow_demobold";
+  font-family: 'strong_glasgow_demobold';
   src: url("strong_glasgow_bold_-_personal_use_only-webfont.woff2") format("woff2"), url("strong_glasgow_bold_-_personal_use_only-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: "GothamPro";
   src: url(../fonts/GothamPro-Light.woff) format("woff");
   font-weight: 100;
   font-style: normal;
 }
+
 @font-face {
   font-family: "GothamPro";
   src: url(../fonts/GothamPro-LightItalic.woff) format("woff");
   font-weight: 100;
   font-style: italic;
 }
+
 @font-face {
   font-family: "GothamPro";
   src: url(../fonts/GothamPro.woff) format("woff");
   font-weight: 200;
   font-style: normal;
 }
+
 @font-face {
   font-family: "GothamPro";
   src: url(../fonts/GothamPro-Medium.woff) format("woff");
   font-weight: 400;
   font-style: normal;
 }
+
 @font-face {
   font-family: "GothamPro";
   src: url(../fonts/GothamPro-Bold.woff) format("woff");
   font-weight: 600;
   font-style: normal;
 }
+
 @font-face {
   font-family: "GothamPro";
   src: url(../fonts/GothamPro-Black.woff) format("woff");
   font-weight: 800;
   font-style: normal;
 }
+
 .center {
   margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 ol {
@@ -62,15 +75,17 @@ a {
   text-decoration: none;
 }
 
-body {
+#env {
   font-family: none;
   opacity: 0;
   will-change: opacity;
+  display: fiex;
 }
 
 #blur {
   filter: blur(0px);
   -webkit-filter: blur(0px);
+  -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
 }
 
@@ -86,12 +101,14 @@ body {
 .active {
   visibility: visible;
   opacity: 1;
+  -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
 }
 
 .inactive {
   visibility: hidden;
   opacity: 0;
+  -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
 }
 
@@ -119,22 +136,33 @@ body {
   background: linear-gradient(20deg, #dbdbdb, #ffffff);
   padding: 0;
 }
+
 #landing #profile {
   bottom: 0;
 }
+
 #landing #propic {
   bottom: 0;
   width: 30%;
 }
+
 #landing #nameContainer {
   margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   top: -8%;
   position: relative;
-  transform: rotate(10deg);
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
 }
+
 #landing #nameContainer #title {
   color: rgba(0, 0, 0, 0.2);
   font-size: calc(1rem + 1vw);
@@ -144,6 +172,7 @@ body {
   margin-top: -7px;
   margin-bottom: 0;
 }
+
 #landing h1 {
   font-family: "strong_glasgow_demobold";
   font-weight: 100;
@@ -152,22 +181,32 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 #landing #footer {
   bottom: 0;
   margin-bottom: 2%;
   color: black;
 }
+
 #landing #footer #arrowContainer {
   margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0;
 }
+
 #landing #footer #arrowContainer #arrowRow {
   font-family: "Raleway", sans-serif;
   color: #be5108;
 }
+
 #landing #footer #arrowContainer #arrow {
   height: 50%;
   margin-top: 25%;
@@ -175,54 +214,70 @@ body {
   fill: #be5108;
   will-change: opacity;
 }
+
 #landing #footer #arrowContainer #portfolio {
   margin-bottom: 0;
   font-weight: bolder;
 }
-#landing #footer #footerIconRow {
+
+#landing #footer .footerIconRow {
   margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0;
 }
-#landing #footer #footerIconRow path {
+
+#landing #footer .footerIconRow path {
   fill: #2e6ca4;
 }
-#landing #footer .footer-icon-container .footer-icon {
+
+#landing #footer .footer-icon {
   width: 50%;
   max-height: 100%;
 }
 
 #projectContainer {
   background: no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   width: 100%;
   min-height: 100vh;
   overflow-x: hidden;
   will-change: opacity;
+  -webkit-transition: -webkit-filter 0.2s;
+  transition: -webkit-filter 0.2s;
   transition: filter 0.2s;
+  transition: filter 0.2s, -webkit-filter 0.2s;
 }
+
 #projectContainer #projects {
   padding: 3% 2.5% 7% 5%;
 }
+
 #projectContainer #headerRow {
   position: relative;
 }
+
 #projectContainer #headerRow #counter {
   font-size: 1.7rem;
   font-weight: bold;
   font-family: "Raleway", sans-serif;
 }
+
 #projectContainer #headerRow #indicatorRow {
   height: 100%;
 }
+
 #projectContainer #headerRow #indicatorList {
   margin: 0;
 }
+
 #projectContainer #headerRow .indicator {
   display: inline-block;
   width: 11px;
@@ -236,74 +291,101 @@ body {
   position: relative;
   z-index: 100;
 }
+
 #projectContainer #foreground {
   position: relative;
   z-index: 3;
 }
+
 #projectContainer #foreground h3 {
   font-family: "Raleway", sans-serif;
 }
+
 #projectContainer #foreground #heroText {
   width: 100%;
   height: 100%;
   position: relative;
   will-change: opacity;
 }
+
 #projectContainer #foreground #heroText h1 {
   font-size: 8.4vw;
 }
+
 #projectContainer #foreground #dataCol {
   margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-left: 0;
   margin-right: 0;
   opacity: 0.7;
   position: relative;
   will-change: opacity;
 }
+
 #projectContainer #foreground #dataCol .data-title-icon {
   margin-bottom: 1rem;
   margin-top: 2rem;
 }
+
 #projectContainer #foreground #dataCol .ts-icon-container {
   margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 #projectContainer #foreground #dataCol .ts-icon-container .ts-icon {
   width: 60%;
   max-height: 100%;
   padding: 20% 0%;
 }
+
 #projectContainer #foreground #dataCol .font-row {
   opacity: 0.7;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
+
 #projectContainer #foreground #dataCol .font-row .font-name {
   margin-top: auto;
   margin-bottom: auto;
   font-weight: bold;
 }
+
 #projectContainer #foreground #dataCol .font-row .font-name p {
   margin-bottom: 0;
 }
+
 #projectContainer #foreground #dataCol .font-row .font-tag {
   margin-top: auto;
   margin-bottom: auto;
 }
+
 #projectContainer #foreground #dataCol .font-row .font-tag p {
   margin-bottom: 0;
 }
+
 #projectContainer #foreground #dataCol button {
   color: white;
   font-family: "Raleway", sans-serif;
   width: 100%;
   margin-top: 10%;
 }
+
 #projectContainer #projectIMG {
   position: absolute;
   top: 0;
@@ -313,10 +395,13 @@ body {
   z-index: 2;
   will-change: opacity;
 }
+
 #projectContainer #projectIMG img {
   height: 80%;
+  width: 60vw;
   position: relative;
 }
+
 #projectContainer #background {
   position: absolute;
   top: 0;
@@ -329,9 +414,15 @@ body {
 
 #invisibleSpace {
   margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   top: 0;
   bottom: 0;
   left: 0;
@@ -341,4 +432,51 @@ body {
   pointer-events: none;
 }
 
+#mobile {
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: none;
+}
+
+#mobile .footer-icon-container {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#mobile .footer-icon {
+  width: 20%;
+}
+
+#mobile .footer-icon path {
+  fill: #2e6ca4;
+}
+
+@media only screen and (max-width: 900px) {
+  #mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #env {
+    display: none;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
