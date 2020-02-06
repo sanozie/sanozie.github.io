@@ -127,8 +127,8 @@ var projectData = [{
         "primaryColor": "white",
         "counter": ".04",
 
-        "hasPreview": false,
-        "buttonLink": "some",
+        "hasPreview": true,
+        "buttonLink": "https://sanozie.github.io/diyhacks/",
         "description": "../public/descriptions/DIYHacks.svg",
 
         "indicators": {
