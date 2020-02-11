@@ -75,6 +75,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 #env {
   font-family: none;
   opacity: 0;
