@@ -11,7 +11,7 @@ var projectData = [{
         "counter": ".01",
 
         "hasPreview": true,
-        "buttonLink": "http://theschoolboard.co",
+        "buttonLink": "http://bordar.site",
         "description": "../public/descriptions/schoolboard.svg",
 
         "indicators": {
@@ -128,7 +128,7 @@ var projectData = [{
         "counter": ".04",
 
         "hasPreview": true,
-        "buttonLink": "https://sanozie.github.io/diyhacks/",
+        "buttonLink": "https://diyhacks.tech",
         "description": "../public/descriptions/DIYHacks.svg",
 
         "indicators": {
