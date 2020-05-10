@@ -78,8 +78,18 @@ $primaryDark: "#2e6ca4";
     justify-content: center;
 }
 
+@mixin center-vert {
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
 .center {
     @include center;
+}
+
+.center-vert {
+    @include center-vert;
 }
 
 @mixin poster {
@@ -225,6 +235,56 @@ a:hover {
             width: 50%;
             max-height: 100%;
         }
+    }
+}
+
+#intro {
+    background-color: red;
+    padding: 0 calc(4rem + 5vw);
+    color: white;
+    font-family: $subFont;
+    height: 100vh;
+    overflow: auto;
+    background: linear-gradient(30deg, #ca3954, #ae478a, #755ea8);
+    #whiteGroup {
+        background-color: white;
+        border-radius: 20px;
+        color: #686868;
+        position: relative;
+        #experience {
+            font-size: calc(0.5rem + 0.8vw);
+            font-weight: bolder;
+            letter-spacing: 0.005rem;
+            padding: 3% 0 3% 5%;
+            position: absolute;
+            top: 0;
+        }
+    }
+    .experienceItem {
+        height: 15vh;
+        .experienceText {
+            white-space: nowrap;
+        }
+        h2 {
+            font-size: 7vh;
+            font-weight: bolder;
+            letter-spacing: 0.01rem;
+        }
+        .company-logo-col {
+            padding: 0;
+        }
+        .company-logo {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+    h1 {
+        font-size: calc(2rem + 5vw);
+        font-weight: bolder;
+        letter-spacing: 0.05rem;
+    }
+    p {
+        font-size: calc(1rem + 0.7vw);
     }
 }
 
@@ -374,6 +434,11 @@ a:hover {
         }
     }
     display: none;
+}
+
+//global text
+p {
+    margin: 0;
 }
 
 @media only screen and (max-width: 900px) {

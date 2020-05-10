@@ -1,47 +1,5 @@
 //Data
-var projectData = [{
-        "text": "The Future Of Inqiury",
-        "fontFamily": "'Cinzel Decorative', serif",
-        "fontWeight": "bold",
-        "img": "../public/imgs/schoolboard.svg",
-        "imgPosition": "translateX(25vw) translateY(10vh)",
-        "backgroundColor": "#ffffff",
-        "buttonTextColor": "white",
-        "primaryColor": "#164869",
-        "counter": ".01",
-
-        "hasPreview": true,
-        "buttonLink": "http://bordar.site",
-        "description": "../public/descriptions/schoolboard.svg",
-
-        "indicators": {
-            "border": "1px solid #164869",
-            "active": "#164869"
-        },
-        "techIcons": [
-            "../public/techicons/grey/html-5.svg",
-            "../public/techicons/grey/css-3.svg",
-            "../public/techicons/grey/js.svg",
-            "../public/techicons/grey/animejs.svg",
-            "../public/techicons/grey/bootstrap-4.svg",
-            "../public/techicons/grey/firebase.svg",
-            "../public/techicons/grey/jquery.svg",
-            "../public/techicons/grey/marko.svg",
-            "../public/techicons/grey/nodejs.svg",
-            "../public/techicons/grey/sass.svg"
-        ],
-        "fonts": [{
-                "id": "Cinzel",
-                "text": "Cinzel Decorative",
-                "fontFamily": "'Cinzel Decorative', serif"
-            },
-            {
-                "id": "raleway",
-                "text": "Raleway",
-                "fontFamily": "'Raleway', serif"
-            }
-        ]
-    },
+var projectData = [
     {
         "text": "Robotics engineering inspiring students",
         "fontFamily": "Roboto",
@@ -52,7 +10,7 @@ var projectData = [{
         "backgroundImg": "../public/imgs/roboticsback.svg",
         "buttonTextColor": "black",
         "primaryColor": "white",
-        "counter": ".02",
+        "counter": ".01",
 
         "hasPreview": "true",
         "buttonLink": "http://titanrobotics2022.com",
@@ -75,6 +33,47 @@ var projectData = [{
             "text": "Roboto",
             "fontFamily": "'Roboto', sans-serif"
         }]
+    },
+    {
+        "text": "UNIVERSITY STUDENTS DECENTRALIZE HACKATHONS",
+        "fontFamily": "'Anton', sans-serif",
+        "fontWeight": "100",
+        "img": "../public/imgs/diyhacks.svg",
+        "imgPosition": "translateX(25vw) translateY(10vh)",
+        "backgroundColor": "#2B2B2B",
+        "buttonTextColor": "#2b2b2b",
+        "primaryColor": "white",
+        "counter": ".02",
+
+        "hasPreview": true,
+        "buttonLink": "https://diyhacks.tech",
+        "description": "../public/descriptions/DIYHacks.svg",
+
+        "indicators": {
+            "border": "1px solid white",
+            "active": "#DD00FF"
+        },
+        "techIcons": [
+            "../public/techicons/white/html-5.svg",
+            "../public/techicons/white/css-3.svg",
+            "../public/techicons/white/js.svg",
+            "../public/techicons/white/bootstrap-4.svg",
+            "../public/techicons/white/jquery.svg",
+            "../public/techicons/white/sass.svg",
+            "../public/techicons/white/nodejs.svg",
+            "../public/techicons/white/mongodb.svg",
+        ],
+        "fonts": [{
+                "id": "anton",
+                "text": "Anton",
+                "fontFamily": "'Anton', sans-serif"
+            },
+            {
+                "id": "raleway",
+                "text": "Raleway",
+                "fontFamily": "'Raleway', serif"
+            }
+        ]
     },
     {
         "text": "CUSTOM DEVELOPEMT SERVICES",
@@ -117,38 +116,40 @@ var projectData = [{
         ]
     },
     {
-        "text": "UNIVERSITY STUDENTS DECENTRALIZE HACKATHONS",
-        "fontFamily": "'Anton', sans-serif",
-        "fontWeight": "100",
-        "img": "../public/imgs/diyhacks.svg",
+        "text": "The Future Of Inqiury",
+        "fontFamily": "'Cinzel Decorative', serif",
+        "fontWeight": "bold",
+        "img": "../public/imgs/schoolboard.svg",
         "imgPosition": "translateX(25vw) translateY(10vh)",
-        "backgroundColor": "#2B2B2B",
-        "buttonTextColor": "#2b2b2b",
-        "primaryColor": "white",
+        "backgroundColor": "#ffffff",
+        "buttonTextColor": "white",
+        "primaryColor": "#164869",
         "counter": ".04",
 
         "hasPreview": true,
-        "buttonLink": "https://diyhacks.tech",
-        "description": "../public/descriptions/DIYHacks.svg",
+        "buttonLink": "http://bordar.site",
+        "description": "../public/descriptions/schoolboard.svg",
 
         "indicators": {
-            "border": "1px solid white",
-            "active": "#DD00FF"
+            "border": "1px solid #164869",
+            "active": "#164869"
         },
         "techIcons": [
-            "../public/techicons/white/html-5.svg",
-            "../public/techicons/white/css-3.svg",
-            "../public/techicons/white/js.svg",
-            "../public/techicons/white/bootstrap-4.svg",
-            "../public/techicons/white/jquery.svg",
-            "../public/techicons/white/sass.svg",
-            "../public/techicons/white/nodejs.svg",
-            "../public/techicons/white/mongodb.svg",
+            "../public/techicons/grey/html-5.svg",
+            "../public/techicons/grey/css-3.svg",
+            "../public/techicons/grey/js.svg",
+            "../public/techicons/grey/animejs.svg",
+            "../public/techicons/grey/bootstrap-4.svg",
+            "../public/techicons/grey/firebase.svg",
+            "../public/techicons/grey/jquery.svg",
+            "../public/techicons/grey/marko.svg",
+            "../public/techicons/grey/nodejs.svg",
+            "../public/techicons/grey/sass.svg"
         ],
         "fonts": [{
-                "id": "anton",
-                "text": "Anton",
-                "fontFamily": "'Anton', sans-serif"
+                "id": "Cinzel",
+                "text": "Cinzel Decorative",
+                "fontFamily": "'Cinzel Decorative', serif"
             },
             {
                 "id": "raleway",
@@ -199,6 +200,39 @@ var projectData = [{
                 "fontFamily": "'Raleway', serif"
             }
         ]
+    }
+]
+
+var experienceData = [
+    {
+        company: "Keyring",
+        title: "Software Engineering Intern",
+        logo: "public/imgs/keyringlogo.png",
+        icons: ["html-5.svg","bootstrap-4.svg","css-3.svg","js.svg","nodejs.svg","firebase.svg"]
+    },
+    {
+        company: "Varsity Tutors",
+        title: "Web Development Tutor",
+        logo: "public/imgs/varsitytutors.png",
+        icons: ["html-5.svg","bootstrap-4.svg","css-3.svg","js.svg","nodejs.svg","jquery.svg","php.svg"]
+    },
+    {
+        company: "Cootbie",
+        title: "Back-End Developemnt Intern",
+        logo: "public/imgs/cootbie.svg",
+        icons: ["html-5.svg","bootstrap-4.svg","css-3.svg","js.svg","nodejs.svg","firebase.svg"]
+    },
+    {
+        company: "Titan Robotics 2022",
+        title: "Web Developer",
+        logo: "public/imgs/titan2022.png",
+        icons: ["html-5.svg","bootstrap-4.svg","css-3.svg","js.svg","sass.svg", "jquery.svg"]
+    },
+    {
+        company: "Packed With Purpose",
+        title: "Graphic Design Intern",
+        logo: "public/imgs/pwp.png",
+        icons: ["html-5.svg","bootstrap-4.svg","css-3.svg","js.svg","sass.svg", "jquery.svg"]
     }
 ]
 
@@ -272,7 +306,7 @@ $.fn.picMove = function(x) {
     var currentPosition = focalpoint - offset;
     var movemeter = -(x - focalpoint);
     var position = currentPosition + movemeter / 35;
-    $(this).css("left", position);
+    $(this).css("transform", `translateX(${position}px)`);
 }
 $.fn.elementMove = function(x, y, level) {
     var xfocalpoint = $(document).width() / 2;
@@ -286,7 +320,7 @@ $.fn.elementMove = function(x, y, level) {
 }
 
 //Loading project-specific data
-$.fn.dataLoad = function(index) {
+$.fn.projectDataLoad = function(index) {
     var data = projectData[index];
     var pc = $("#projectContainer");
 
@@ -368,6 +402,42 @@ $.fn.dataLoad = function(index) {
     $("g").find("path").attr("fill", `${data.primaryColor}`);
 }
 
+function experienceDataLoad(index) {
+    let icons = "";
+    experienceData[index].icons.forEach(icon => {
+        icons += `
+            <div class="col-4">
+                <img src='public/techicons/grey/${icon}' class="img-fluid" alt="skill icon"/>
+            </div>
+        `
+    });
+    let template = `
+    <div class="row experienceItem m-5 pr-5 justify-content-center">
+        <div class="col-2 h-100 justify-content-center company-logo-col center-vert">
+            <img src="${experienceData[index].logo}" class="img-fluid company-logo" alt="Company Logo" />
+        </div>
+        <div class="col-7 h-100 center-vert">
+            <div class="envelope">
+                <div class="row">
+                    <div class="col-12 experienceText">
+                        <h2>${experienceData[index].company}</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 experienceText">
+                        <p>${experienceData[index].title}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-2 h-100">
+            <div class="row justify-content-center h-100">${icons}</div>
+        </div>
+    </div>
+    `
+
+    $("#experienceList").append(template);
+}
 
 //Toggling description displays
 function toggleDisplays(toggleType) {
@@ -408,8 +478,8 @@ $(document).ready(function() {
     //Making the landing elements move at different speeds on scroll
     $('[data-scroll-speed]').moveIt();
 
-    //Loading data on indicator clicks
-    $("#projects").dataLoad(0);
+    //Loading project data on indicator clicks
+    $("#projects").projectDataLoad(0);
     $(".indicator").click(function() {
         $(".active").removeClass("active");
         var index = $(this).index();
@@ -428,7 +498,7 @@ $(document).ready(function() {
                     duration: 400,
                     easing: 'easeOutQuad',
                     complete: function() {
-                        $("#projects").dataLoad(index);
+                        $("#projects").projectDataLoad(index);
                         //Fade in background
                         anime({
                             targets: "#projectContainer",
@@ -452,6 +522,11 @@ $(document).ready(function() {
         });
         $(this).addClass("active");
     })
+
+    //loading experience
+    for(let i = 0; i < experienceData.length; i++) {
+        experienceDataLoad(i);
+    }
 
     //loading page
     $(document).one("mousemove", function() {
