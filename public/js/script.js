@@ -1,47 +1,5 @@
 //Data
-var projectData = [{
-        "text": "The Future Of Inqiury",
-        "fontFamily": "'Cinzel Decorative', serif",
-        "fontWeight": "bold",
-        "img": "../public/imgs/schoolboard.svg",
-        "imgPosition": "translateX(25vw) translateY(10vh)",
-        "backgroundColor": "#ffffff",
-        "buttonTextColor": "white",
-        "primaryColor": "#164869",
-        "counter": ".01",
-
-        "hasPreview": true,
-        "buttonLink": "http://bordar.site",
-        "description": "../public/descriptions/schoolboard.svg",
-
-        "indicators": {
-            "border": "1px solid #164869",
-            "active": "#164869"
-        },
-        "techIcons": [
-            "../public/techicons/grey/html-5.svg",
-            "../public/techicons/grey/css-3.svg",
-            "../public/techicons/grey/js.svg",
-            "../public/techicons/grey/animejs.svg",
-            "../public/techicons/grey/bootstrap-4.svg",
-            "../public/techicons/grey/firebase.svg",
-            "../public/techicons/grey/jquery.svg",
-            "../public/techicons/grey/marko.svg",
-            "../public/techicons/grey/nodejs.svg",
-            "../public/techicons/grey/sass.svg"
-        ],
-        "fonts": [{
-                "id": "Cinzel",
-                "text": "Cinzel Decorative",
-                "fontFamily": "'Cinzel Decorative', serif"
-            },
-            {
-                "id": "raleway",
-                "text": "Raleway",
-                "fontFamily": "'Raleway', serif"
-            }
-        ]
-    },
+var projectData = [
     {
         "text": "Robotics engineering inspiring students",
         "fontFamily": "Roboto",
@@ -52,7 +10,7 @@ var projectData = [{
         "backgroundImg": "../public/imgs/roboticsback.svg",
         "buttonTextColor": "black",
         "primaryColor": "white",
-        "counter": ".02",
+        "counter": ".01",
 
         "hasPreview": "true",
         "buttonLink": "http://titanrobotics2022.com",
@@ -75,6 +33,47 @@ var projectData = [{
             "text": "Roboto",
             "fontFamily": "'Roboto', sans-serif"
         }]
+    },
+    {
+        "text": "UNIVERSITY STUDENTS DECENTRALIZE HACKATHONS",
+        "fontFamily": "'Anton', sans-serif",
+        "fontWeight": "100",
+        "img": "../public/imgs/diyhacks.svg",
+        "imgPosition": "translateX(25vw) translateY(10vh)",
+        "backgroundColor": "#2B2B2B",
+        "buttonTextColor": "#2b2b2b",
+        "primaryColor": "white",
+        "counter": ".02",
+
+        "hasPreview": true,
+        "buttonLink": "https://diyhacks.tech",
+        "description": "../public/descriptions/DIYHacks.svg",
+
+        "indicators": {
+            "border": "1px solid white",
+            "active": "#DD00FF"
+        },
+        "techIcons": [
+            "../public/techicons/white/html-5.svg",
+            "../public/techicons/white/css-3.svg",
+            "../public/techicons/white/js.svg",
+            "../public/techicons/white/bootstrap-4.svg",
+            "../public/techicons/white/jquery.svg",
+            "../public/techicons/white/sass.svg",
+            "../public/techicons/white/nodejs.svg",
+            "../public/techicons/white/mongodb.svg",
+        ],
+        "fonts": [{
+                "id": "anton",
+                "text": "Anton",
+                "fontFamily": "'Anton', sans-serif"
+            },
+            {
+                "id": "raleway",
+                "text": "Raleway",
+                "fontFamily": "'Raleway', serif"
+            }
+        ]
     },
     {
         "text": "CUSTOM DEVELOPEMT SERVICES",
@@ -117,38 +116,40 @@ var projectData = [{
         ]
     },
     {
-        "text": "UNIVERSITY STUDENTS DECENTRALIZE HACKATHONS",
-        "fontFamily": "'Anton', sans-serif",
-        "fontWeight": "100",
-        "img": "../public/imgs/diyhacks.svg",
+        "text": "The Future Of Inqiury",
+        "fontFamily": "'Cinzel Decorative', serif",
+        "fontWeight": "bold",
+        "img": "../public/imgs/schoolboard.svg",
         "imgPosition": "translateX(25vw) translateY(10vh)",
-        "backgroundColor": "#2B2B2B",
-        "buttonTextColor": "#2b2b2b",
-        "primaryColor": "white",
+        "backgroundColor": "#ffffff",
+        "buttonTextColor": "white",
+        "primaryColor": "#164869",
         "counter": ".04",
 
         "hasPreview": true,
-        "buttonLink": "https://diyhacks.tech",
-        "description": "../public/descriptions/DIYHacks.svg",
+        "buttonLink": "http://bordar.site",
+        "description": "../public/descriptions/schoolboard.svg",
 
         "indicators": {
-            "border": "1px solid white",
-            "active": "#DD00FF"
+            "border": "1px solid #164869",
+            "active": "#164869"
         },
         "techIcons": [
-            "../public/techicons/white/html-5.svg",
-            "../public/techicons/white/css-3.svg",
-            "../public/techicons/white/js.svg",
-            "../public/techicons/white/bootstrap-4.svg",
-            "../public/techicons/white/jquery.svg",
-            "../public/techicons/white/sass.svg",
-            "../public/techicons/white/nodejs.svg",
-            "../public/techicons/white/mongodb.svg",
+            "../public/techicons/grey/html-5.svg",
+            "../public/techicons/grey/css-3.svg",
+            "../public/techicons/grey/js.svg",
+            "../public/techicons/grey/animejs.svg",
+            "../public/techicons/grey/bootstrap-4.svg",
+            "../public/techicons/grey/firebase.svg",
+            "../public/techicons/grey/jquery.svg",
+            "../public/techicons/grey/marko.svg",
+            "../public/techicons/grey/nodejs.svg",
+            "../public/techicons/grey/sass.svg"
         ],
         "fonts": [{
-                "id": "anton",
-                "text": "Anton",
-                "fontFamily": "'Anton', sans-serif"
+                "id": "Cinzel",
+                "text": "Cinzel Decorative",
+                "fontFamily": "'Cinzel Decorative', serif"
             },
             {
                 "id": "raleway",
@@ -201,7 +202,6 @@ var projectData = [{
         ]
     }
 ]
-
 
 //Functions
 //Streching the landing text
