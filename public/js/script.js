@@ -390,10 +390,21 @@ function toggleDisplays(toggleType) {
 
 
 $(document).ready(function() {
+    //Initial load for mobile vs. desktop
+    if($(window).width() < 990) {
+        $("#mobile").css("display", "flex")
+        $("#env").css("display", "none")
+    } else {
+        $("#mobile").css("display", "none")
+        $("#env").css("display", "flex")
+    }
+
     //streching the header text
     $('.stretch').each(function() {
         $(this).strech_text();
     });
+
+
 
     //Moving elements
     $(document).on("mousemove", function(event) {
