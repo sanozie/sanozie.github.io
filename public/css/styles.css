@@ -83,7 +83,9 @@ a:hover {
   font-family: none;
   opacity: 0;
   will-change: opacity;
-  display: fiex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 #blur {
