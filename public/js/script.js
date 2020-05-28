@@ -375,5 +375,11 @@ $(document).ready(function() {
     //Media Queries
     if(window.innerWidth < 600) {
         $(".info-wrapper").addClass("info-wrapper-initial-hover")
+        anime({
+            targets: "#env",
+            opacity: [0, 1],
+            duration: 500,
+            easing: "easeOutQuad"
+        });
     }
 });
