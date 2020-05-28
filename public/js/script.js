@@ -1,375 +1,170 @@
-//Data
-var projectData = [
-    {
-        "text": "Robotics engineering inspiring students",
-        "fontFamily": "Roboto",
-        "fontWeight": 100,
-        "img": "../public/imgs/robotics.svg",
-        "imgPosition": "translateX(25vw) translateY(10vh)",
-        "backgroundColor": "#000000",
-        "backgroundImg": "../public/imgs/roboticsback.svg",
-        "buttonTextColor": "black",
-        "primaryColor": "white",
-        "counter": ".01",
-
-        "hasPreview": "true",
-        "buttonLink": "http://titanrobotics2022.com",
-        "description": "../public/descriptions/robotics.svg",
-
-        "indicators": {
-            "border": "1px solid white",
-            "active": "white"
-        },
-        "techIcons": [
-            "../public/techicons/colored/html-5.svg",
-            "../public/techicons/colored/css-3.svg",
-            "../public/techicons/colored/js.svg",
-            "../public/techicons/colored/bootstrap-4.svg",
-            "../public/techicons/colored/jquery.svg",
-            "../public/techicons/colored/sass.svg"
-        ],
-        "fonts": [{
-            "id": "roboto",
-            "text": "Roboto",
-            "fontFamily": "'Roboto', sans-serif"
-        }]
+let experienceData = {
+    Keyring: {
+        company: "Keyring",
+        title: "Software Engineering Intern",
+        logo: "public/imgs/keyringlogo.png",
+        link: "https://joinkeyring.com",
+        time: "Apr 2020 - Present",
+        description: "Bundling platform for streaming services.",
+        expImg: "keyringexp.svg"
     },
-    {
-        "text": "UNIVERSITY STUDENTS DECENTRALIZE HACKATHONS",
-        "fontFamily": "'Anton', sans-serif",
-        "fontWeight": "100",
-        "img": "../public/imgs/diyhacks.svg",
-        "imgPosition": "translateX(25vw) translateY(10vh)",
-        "backgroundColor": "#2B2B2B",
-        "buttonTextColor": "#2b2b2b",
-        "primaryColor": "white",
-        "counter": ".02",
-
-        "hasPreview": true,
-        "buttonLink": "https://diyhacks.tech",
-        "description": "../public/descriptions/DIYHacks.svg",
-
-        "indicators": {
-            "border": "1px solid white",
-            "active": "#DD00FF"
-        },
-        "techIcons": [
-            "../public/techicons/white/html-5.svg",
-            "../public/techicons/white/css-3.svg",
-            "../public/techicons/white/js.svg",
-            "../public/techicons/white/bootstrap-4.svg",
-            "../public/techicons/white/jquery.svg",
-            "../public/techicons/white/sass.svg",
-            "../public/techicons/white/nodejs.svg",
-            "../public/techicons/white/mongodb.svg",
-        ],
-        "fonts": [{
-                "id": "anton",
-                "text": "Anton",
-                "fontFamily": "'Anton', sans-serif"
-            },
-            {
-                "id": "raleway",
-                "text": "Raleway",
-                "fontFamily": "'Raleway', serif"
-            }
-        ]
+    VT: {
+        company: "Varsity Tutors",
+        title: "Web Development Tutor",
+        logo: "public/imgs/varsitytutors.png",
+        link: "https://www.varsitytutors.com/tutors/878747878",
+        time: "Feb 2020 - Present",
+        description: "Assisting students in various web development bootcamps and classes.",
+        expImg: "varsityexp.png"
+        
     },
-    {
-        "text": "CUSTOM DEVELOPEMT SERVICES",
-        "fontFamily": "GothamPro",
-        "fontWeight": "bold",
-        "img": "../public/imgs/caimage.svg",
-        "imgPosition": "translateX(25vw) translateY(10vh)",
-        "backgroundColor": "#ffffff",
-        "backgroundImg": "../public/imgs/caback.svg",
-        "buttonTextColor": "white",
-        "primaryColor": "#489EC0",
-        "counter": ".03",
-
-        "hasPreview": true,
-        "buttonLink": "../CodeAuthority/index.html",
-        "description": "../public/descriptions/codeauthority.svg",
-
-        "indicators": {
-            "border": "1px solid #489EC0",
-            "active": "#489EC0"
-        },
-        "techIcons": [
-            "../public/techicons/colored/html-5.svg",
-            "../public/techicons/colored/css-3.svg",
-            "../public/techicons/colored/js.svg",
-            "../public/techicons/colored/bootstrap-4.svg",
-            "../public/techicons/colored/jquery.svg",
-            "../public/techicons/colored/sass.svg"
-        ],
-        "fonts": [{
-                "id": "gotham",
-                "text": "Gotham",
-                "fontFamily": "GothamPro"
-            },
-            {
-                "id": "raleway",
-                "text": "Raleway",
-                "fontFamily": "'Raleway', serif"
-            }
-        ]
+    Cootbie: {
+        company: "Cootbie",
+        title: "Back-End Development Intern",
+        logo: "public/imgs/cootbie.svg",
+        link: "https://cootbie.com",
+        time: "Jul 2019 - Jan 2020",
+        description: "Giving job-seekers a voice in the journey of recruitment.",
+        expImg: "cootbieback.png"
     },
-    {
-        "text": "The Future Of Inqiury",
-        "fontFamily": "'Cinzel Decorative', serif",
-        "fontWeight": "bold",
-        "img": "../public/imgs/schoolboard.svg",
-        "imgPosition": "translateX(25vw) translateY(10vh)",
-        "backgroundColor": "#ffffff",
-        "buttonTextColor": "white",
-        "primaryColor": "#164869",
-        "counter": ".04",
-
-        "hasPreview": true,
-        "buttonLink": "http://bordar.site",
-        "description": "../public/descriptions/schoolboard.svg",
-
-        "indicators": {
-            "border": "1px solid #164869",
-            "active": "#164869"
-        },
-        "techIcons": [
-            "../public/techicons/grey/html-5.svg",
-            "../public/techicons/grey/css-3.svg",
-            "../public/techicons/grey/js.svg",
-            "../public/techicons/grey/animejs.svg",
-            "../public/techicons/grey/bootstrap-4.svg",
-            "../public/techicons/grey/firebase.svg",
-            "../public/techicons/grey/jquery.svg",
-            "../public/techicons/grey/marko.svg",
-            "../public/techicons/grey/nodejs.svg",
-            "../public/techicons/grey/sass.svg"
-        ],
-        "fonts": [{
-                "id": "Cinzel",
-                "text": "Cinzel Decorative",
-                "fontFamily": "'Cinzel Decorative', serif"
-            },
-            {
-                "id": "raleway",
-                "text": "Raleway",
-                "fontFamily": "'Raleway', serif"
-            }
-        ]
+    Titan: {
+        company: "Titan Robotics 2022",
+        title: "Web Developer",
+        logo: "public/imgs/titan2022.png",
+        link: "https://titanrobotics2022.com",
+        time: "Jun 2019 - Jul 2019",
+        description: "Showcasing robotics team for business partnerships.",
+        expImg: "roboticsexp.png"
     },
-    {
-        "text": "INVEST IN THE FUTURE",
-        "fontFamily": "'Kodchasan', sans-serif",
-        "fontWeight": "100",
-        "img": "../public/imgs/sevc.svg",
-        "imgPosition": "translateX(25vw) translateY(10vh)",
-        "backgroundColor": "linear-gradient(to right bottom, #ff0000, #ff6900, #ffa100, #f4d200, #dfff00)",
-        "isGradient": true,
-        "backgroundImg": "../public/imgs/sevcback.svg",
-        "buttonTextColor": "#2b2b2b",
-        "primaryColor": "white",
-        "counter": ".05",
-
-        "hasPreview": true,
-        "buttonLink": "../SEVC/index.html",
-        "description": "../public/descriptions/sevc.svg",
-
-        "indicators": {
-            "border": "1px solid white",
-            "active": "white"
-        },
-        "techIcons": [
-            "../public/techicons/colored/html-5.svg",
-            "../public/techicons/colored/css-3.svg",
-            "../public/techicons/white/js.svg",
-            "../public/techicons/colored/bootstrap-4.svg",
-            "../public/techicons/colored/jquery.svg",
-            "../public/techicons/colored/sass.svg",
-            "../public/techicons/colored/nodejs.svg",
-            "../public/techicons/white/mongodb.svg",
-        ],
-        "fonts": [{
-                "id": "kodchasan",
-                "text": "Kodchasan",
-                "fontFamily": "'Kodchasan', sans-serif"
-            },
-            {
-                "id": "raleway",
-                "text": "Raleway",
-                "fontFamily": "'Raleway', serif"
-            }
-        ]
+    PWP: {
+        company: "Packed With Purpose",
+        title: "Graphic Design Intern",
+        logo: "public/imgs/pwp.png",
+        link: "https://packedwithpurpose.gifts",
+        time: "Jun 2018 - Jul 2018",
+        description: "Corportae gifting combined with sustainable practices.",
+        expImg: "pwpexp.png"
     }
-]
+}
 
-
-//Functions
-//Streching the landing text
-$.fn.strech_text = function() {
-    var elmt = $(this),
-        cont_width = elmt.width(),
-        txt = elmt.html(),
-        one_line = $('<span class="stretch_it">' + txt + '</span>'),
-        nb_char = elmt.text().length,
-        spacing = cont_width / nb_char,
-        txt_width;
-
-    elmt.html(one_line);
-    txt_width = one_line.width();
-
-    if (txt_width < cont_width) {
-        var char_width = txt_width / nb_char,
-            ltr_spacing = spacing - char_width + (spacing - char_width) / nb_char;
-
-        one_line.css({ 'letter-spacing': ltr_spacing });
-    } else {
-        one_line.contents().unwrap();
-        elmt.addClass('justify');
+let projectData = {
+    Titan: {
+        title: "Titan Robotics 2022",
+        logo: "public/imgs/titan2022.png",
+        link: "https://titanrobotics2022",
+        description: "Redesigning robotics team website for business partnerships.",
+        back: "titanback.png"
+    },
+    DIYHacks: {
+        title: "DIYHacks",
+        logo: "public/imgs/diyhackslogo.png",
+        link: "https://diyhacks.tech",
+        description: "Dynamic hackathon & project creation for students.",
+        back: "diyhacksback.png"
+    },
+    CA: {
+        title: "Code Authority",
+        logo: "public/imgs/calogo.png",
+        link: "https://cootbie.com",
+        description: "Designed and developed interview website within a week.",
+        back: "caback.png"
+    },
+    Bordar: {
+        title: "Bordar",
+        logo: "public/imgs/bordarlogo.png",
+        link: "https://bordar.site",
+        description: "Data analytics for curriculum development.",
+        back: "bordarback.png"
+    },
+    SEVC: {
+        title: "SEVC",
+        logo: "public/imgs/sevclogo.png",
+        link: "https://packedwithpurpose.gifts",
+        description: "Student-driven ventures impacting world sustainability.",
+        back: "sevcback.png"
     }
-};
-
-//Moving elements on scroll
-$.fn.moveIt = function() {
-    var $window = $(window);
-
-    var instances = [];
-
-    $(this).each(function() {
-        instances.push(new moveItItem($(this)));
-    });
-
-    window.addEventListener('scroll', function() {
-        var scrollTop = $window.scrollTop();
-        instances.forEach(function(inst) {
-            inst.update(scrollTop);
-        });
-    }, { passive: true });
-}
-var moveItItem = function(el) {
-    this.el = $(el);
-    this.speed = parseFloat(this.el.attr('data-scroll-speed'));
-};
-moveItItem.prototype.update = function(scrollTop) {
-    var $window = $(window);
-    var $doc = $(document);
-    var startingPos = $doc.height() - $window.height();
-    var position = scrollTop - startingPos;
-    this.el.css('transform', 'translateY(' + -(position / this.speed) + 'px)');
-};
-
-//Moving elements on mousemove
-$.fn.nameMove = function(x) {
-    var focalpoint = $(document).width() / 2;
-    var movemeter = -(x - focalpoint);
-    var position = movemeter / 55;
-    $(this).css("left", position);
-    var background = "linear-gradient(" + movemeter / 20 + "deg, #be5108, #be5108,#be5108,  #ca3954, #ae478a, #755ea8, #2e6ca4, #2e6ca4, #2e6ca4)";
-    $("#samanozie").css("background-image", background);
-}
-$.fn.picMove = function(x) {
-    var focalpoint = $(document).width() / 2;
-    var offset = $("#propic").outerWidth() / 2;
-    var currentPosition = focalpoint - offset;
-    var movemeter = -(x - focalpoint);
-    var position = currentPosition + movemeter / 35;
-    $(this).css("left", position);
-}
-$.fn.elementMove = function(x, y, level) {
-    var xfocalpoint = $(document).width() / 2;
-    var yfocalpoint = $(window).height() / 2;
-    var xmovemeter = -(x - xfocalpoint);
-    var ymovemeter = -(y - yfocalpoint);
-    var xposition = xmovemeter / level;
-    var yposition = ymovemeter / level;
-    $(this).css("left", xposition);
-    $(this).css("top", yposition);
 }
 
-//Loading project-specific data
-$.fn.dataLoad = function(index) {
-    var data = projectData[index];
-    var pc = $("#projectContainer");
 
-    //Changing background/Image
-    pc.css({
-        "background-image": "none",
-        "background-color": "none"
-    });
-    if (data.backgroundImg) {
-        if (data.isGradient) {
-            pc.css("background-image", `url('${data.backgroundImg}'), ${data.backgroundColor}`);
-        } else {
-            pc.css({
-                "background-image": `url('${data.backgroundImg}')`,
-                "background-color": data.backgroundColor
-            })
-        }
-    } else {
-        pc.css("background-color", data.backgroundColor)
-    }
 
-    //Adding text
-    $(this).find("h1").text(data.text).css({
-        "font-family": data.fontFamily,
-        "font-weight": data.fontWeight
-    });
-    $("#counter").text(data.counter);
+/**
+ * 3D rotation of "Aye I'm Sam"
+ * Y coordinate determines rotation on x axis
+ * Z coordinate determines rotation of y and z axis
+ * Function also adds changing gradient to element
+ */
+$.fn.nameMove = function(x, y) {
+    let xfocalpoint = $(document).width() / 2;
+    let yfocalpoint = $(window).height() / 2;
+    let xmovemeter = -(x - xfocalpoint);
+    let ymovemeter = -(y - yfocalpoint);
+    let background = "linear-gradient(" + xmovemeter / 20 + "deg, #be5108, #be5108,#be5108,  #ca3954, #ae478a, #755ea8, #2e6ca4, #2e6ca4, #2e6ca4)";
+    $("#ayeimsam").css("background-image", background);
+    $("#ayeimsam").css("transform", `rotateX(${-(ymovemeter/yfocalpoint)/24}turn) rotateY(${-(xmovemeter/xfocalpoint)/16}turn) rotateZ(${-(xmovemeter/xfocalpoint)/150}turn) skewX(${(xmovemeter/xfocalpoint)}deg)`);
+}
 
-    //Adding picture
-    $("#projectSample").attr("src", `${data.img}`).css("transform", `${data.imgPosition}`);
+function disableScrolling(){
+    let x=window.scrollX;
+    let y=window.scrollY;
+    window.onscroll=function(){window.scrollTo(x, y);};
+}
 
-    //Loading side data
-    $("#iconPaste").empty();
-    data.techIcons.forEach(src => {
-        var div = `
-                    <div class = "ts-icon-container col-4">
-                         <img class = "ts-icon img-fluid" src = '${src}'/>
-                    </div>`;
-        $("#iconPaste").append(div);
-    });
-    $("#fontPaste").empty();
-    data.fonts.forEach(fontData => {
-        var div = `
-                    <div class = "font-row row ">
-                         <div class = "font-name col-12 text-center">
-                              <p id = '${fontData.id}'>${fontData.text}</p>
-                         </div>
+function enableScrolling(){
+    window.onscroll=function(){};
+}
+
+function experienceDataLoad(key, data) {
+    let template = `
+    <div class="info-wrapper exp-info-wrapper position-relative" data-external-link=${data.link} data-company=${key}>
+        <span class = "externalButton center">
+            <svg class="bi bi-box-arrow-up-right externalIcon" width="1em" height="1em" viewBox="0 0 16 16" fill="white" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M1.5 13A1.5 1.5 0 003 14.5h8a1.5 1.5 0 001.5-1.5V9a.5.5 0 00-1 0v4a.5.5 0 01-.5.5H3a.5.5 0 01-.5-.5V5a.5.5 0 01.5-.5h4a.5.5 0 000-1H3A1.5 1.5 0 001.5 5v8zm7-11a.5.5 0 01.5-.5h5a.5.5 0 01.5.5v5a.5.5 0 01-1 0V2.5H9a.5.5 0 01-.5-.5z" clip-rule="evenodd"/>
+                <path fill-rule="evenodd" d="M14.354 1.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z" clip-rule="evenodd"/>
+            </svg>
+        </span>
+        <div class="row info-item my-2 justify-content-start">
+            <div class="col-2 h-100 justify-content-center company-logo-col center-vert">
+                <img src="${data.logo}" class="img-fluid company-logo" alt="Company Logo" />
+            </div>
+            <div class="col-8 h-100 center-vert expTextRow">
+                <div class="envelope">
+                    <div class="row">
+                        <div class="col-12 info-text">
+                            <h2>${data.company}</h2>
+                        </div>
                     </div>
-          `;
-        $("#fontPaste").append(div);
-        $(`#${fontData.id}`).css("font-family", `${fontData.fontFamily}`)
-    });
+                    <div class="row">
+                        <div class="col-12 info-text">
+                            <p>${data.title}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    `
 
-    //Changing button link
-    $(this).find("a").removeAttr("href");
-    $("#description").text("");
-    if (data.hasPreview) {
-        $(this).find("a").attr("href", `${data.buttonLink}`).find("button").text("View Site");
-        $("#description").text("View Description").attr("onclick", "toggleDisplays('description')").css("color", data.primaryColor);
-    } else {
-        $(this).find("button").text("View Description").attr("onclick", "toggleDisplays('description')");
-    }
-
-    //Updating description img
-    $("#invisibleSpace").html("").html(`<img id = "describeImg" src = "${data.description}"/>`);
-
-
-    //changing css
-    $(".color-change-text").css("color", `${data.primaryColor}`);
-    $(".color-change-element").css({
-        "background-color": `${data.primaryColor}`,
-        "color": `${data.buttonTextColor}`
-    });
-    $(".indicator").css({
-        "border": data.indicators.border,
-        "background": "none"
-    });
-    $(".active").css("background", data.indicators.active);
-    $("g").find("path").attr("fill", `${data.primaryColor}`);
+    $("#experienceList").append(template);
 }
-
-
+function projectDataLoad(key, data) {
+    let template = `
+    <div class="info-wrapper project-info-wrapper position-relative" data-external-link=${data.link} data-project=${key}>
+        <span class = "externalButton center">
+            <svg class="bi bi-box-arrow-up-right externalIcon" width="1em" height="1em" viewBox="0 0 16 16" fill="white" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M1.5 13A1.5 1.5 0 003 14.5h8a1.5 1.5 0 001.5-1.5V9a.5.5 0 00-1 0v4a.5.5 0 01-.5.5H3a.5.5 0 01-.5-.5V5a.5.5 0 01.5-.5h4a.5.5 0 000-1H3A1.5 1.5 0 001.5 5v8zm7-11a.5.5 0 01.5-.5h5a.5.5 0 01.5.5v5a.5.5 0 01-1 0V2.5H9a.5.5 0 01-.5-.5z" clip-rule="evenodd"/>
+                <path fill-rule="evenodd" d="M14.354 1.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z" clip-rule="evenodd"/>
+            </svg>
+        </span>
+        <div class="row my-2 justify-content-center">
+            <div class="col-9 h-100 company-logo-col">
+                <img src="${data.logo}" class="img-fluid company-logo" alt="Company Logo" />
+            </div>
+        </div>
+    </div>
+    `
+    $("#projectList").append(template);
+}
+function projectHoverLoad(company) {}
 //Toggling description displays
 function toggleDisplays(toggleType) {
     switch (toggleType) {
@@ -391,71 +186,183 @@ function toggleDisplays(toggleType) {
 
 
 $(document).ready(function() {
-    //streching the header text
-    $('.stretch').each(function() {
-        $(this).strech_text();
-    });
-
-    //Moving elements
-    $(document).on("mousemove", function(event) {
-        var x = event.pageX;
-        var y = event.pageY;
-        $("#propic").picMove(x);
-        $("#nameContainer").nameMove(x);
-        $("#projectSample").elementMove(x, y, 45);
-        $("#heroText, #dataCol, #headerRow").elementMove(x, y, 25);
-    });
-
-    //Making the landing elements move at different speeds on scroll
-    $('[data-scroll-speed]').moveIt();
-
-    //Loading data on indicator clicks
-    $("#projects").dataLoad(0);
-    $(".indicator").click(function() {
-        $(".active").removeClass("active");
-        var index = $(this).index();
-        //Fading out foreground elements
-        anime({
-            targets: '#projectIMG, #heroText, #dataCol,  #headerRow',
-            opacity: [1, 0],
-            duration: 400,
-            delay: anime.stagger(100),
-            easing: 'easeOutQuad',
-            complete: function() {
-                //fading out background w/ image
-                anime({
-                    targets: "#projectContainer",
-                    opacity: [1, 0],
-                    duration: 400,
-                    easing: 'easeOutQuad',
-                    complete: function() {
-                        $("#projects").dataLoad(index);
-                        //Fade in background
-                        anime({
-                            targets: "#projectContainer",
-                            opacity: [0, 1],
-                            duration: 400,
-                            easing: 'easeOutQuad',
-                            complete: function() {
-                                //Fade in foreground elements
-                                anime({
-                                    targets: '#projectIMG, #heroText, #dataCol,  #headerRow',
-                                    opacity: [0, 1],
-                                    duration: 400,
-                                    delay: anime.stagger(100),
-                                    easing: 'easeInOutQuad'
-                                })
-                            }
-                        })
-                    }
-                })
+    //no Scrolling for this site!
+    disableScrolling();
+    $(".scroll-down-arrow").click(function() {
+        enableScrolling();
+        let position = $(window).scrollTop() + $(window).height();
+        $("html, body").animate(
+            {scrollTop: `${position}px`},
+            {
+                duration: 900,
+                specialEasing: {
+                    scrollTop: "swing"
+                },
+                complete: function() {
+                    disableScrolling();
+                }
             }
-        });
-        $(this).addClass("active");
+        )
+    });
+    $(".scroll-up-arrow").click(function() {
+        enableScrolling();
+        let position = $(window).scrollTop() - $(window).height();
+        $("html, body").animate(
+            {scrollTop: `${position}px`},
+            {
+                duration: 900,
+                specialEasing: {
+                    scrollTop: "swing"
+                },
+                complete: function() {
+                    disableScrolling();
+                }
+            }
+        )
     })
 
+    //enabling tooltips
+    //$('[data-toggle="tooltip"]').tooltip();
+    //Moving elements
+    $(document).on("mousemove", function(event) {
+        let x = event.pageX;
+        let y = event.pageY;
+        $("#nameContainer").nameMove(x, y);
+    });
+
+    //loading experience
+    Object.keys(experienceData).forEach(key => {
+        experienceDataLoad(key, experienceData[key]);
+    })
+
+    Object.keys(projectData).forEach(key => {
+        projectDataLoad(key, projectData[key]);
+    })
+
+    //On click experience external links
+    $('.info-wrapper').click(function() {
+        let link = $(this).attr('data-external-link');
+        window.open(link, '_blank');
+    });
+
+    let lastEnteredExp = '';
+    $('.exp-info-wrapper').mouseenter(function() {
+        let key = $(this).attr('data-company');
+        if($("[data-company='Keyring']").hasClass('info-wrapper-initial-hover')) {
+            $("[data-company='Keyring']").removeClass('info-wrapper-initial-hover')
+        }
+        if(lastEnteredExp != key) {
+            let { time, description, expImg } = experienceData[key];
+            let finishedAnim = false
+            $("#expInfoRow").css({
+                "opacity": "0",
+                "transform": "translateY('0px')"
+            })
+            setTimeout(function() {
+                finishedAnim = true;
+                $("#expTimePost").text(time);
+                $("#expDescPost").text(description);
+                $("#expImg").attr('src', `/public/imgs/expBacks/${expImg}`)
+            }, 200)
+            let loadIn = setTimeout(function() {
+                $("#expInfoRow").css({
+                    "opacity": "1",
+                    "transform": "translateY('30px')"
+                })
+            }, 220)
+            if(finishedAnim) {
+                clearTimeout(loadIn)
+            } 
+            lastEnteredExp = key;
+            
+        } else {
+            $("#expInfoRow").css({
+                "opacity": "1",
+                "transform": "translateY('30px')"
+            })
+        }
+        
+    })
+    $('.exp-info-wrapper').mouseleave(function() {
+        $("#expInfoRow").css({
+            "opacity": "0.2",
+            "transform": "translateY('0px')"
+        })
+    })
+
+    let lastEnteredProjectP = '';
+    $('.project-info-wrapper').mouseenter(function() {
+        let key = $(this).attr('data-project');
+        if($("[data-project='Titan']").hasClass('info-wrapper-initial-hover')) {
+            $("[data-project='Titan']").removeClass('info-wrapper-initial-hover')
+        }
+        if(lastEnteredProjectP != key) {
+            let { title, description, back } = projectData[key];
+            let finishedAnim = false
+            $("#projectInfoRow").css({
+                "opacity": "0",
+                "transform": "translateY('0px')"
+            })
+            setTimeout(function() {
+                finishedAnim = true;
+                $("#projectTitlePost").text(title);
+                $("#projectDescPost").text(description);
+                $("#projectImg").attr('src', `/public/imgs/projectBacks/${back}`)
+            }, 200)
+            let loadIn = setTimeout(function() {
+                $("#projectInfoRow").css({
+                    "opacity": "1",
+                    "transform": "translateY('30px')"
+                })
+            }, 220)
+            if(finishedAnim) {
+                clearTimeout(loadIn)
+            } 
+            lastEnteredProjectP = key;
+            
+        } else {
+            $("#projectInfoRow").css({
+                "opacity": "1",
+                "transform": "translateY('30px')"
+            })
+        }
+        
+    })
+    $('.project-info-wrapper').mouseleave(function() {
+        $("#projectInfoRow").css({
+            "opacity": "0.2",
+            "transform": "translateY('0px')"
+        })
+    })
+
+    //make the first element hovered state on initial load
+    $(".exp-info-wrapper").first().addClass("info-wrapper-initial-hover");
+    let { time, description } = experienceData[Object.keys(experienceData)[0]];
+    $("#expTimePost").text(time);
+    $("#expDescPost").text(description);
+    $(".info-wrapper").first().one("mouseleave", function() {
+        $(this).removeClass("info-wrapper-initial-hover");
+    })
+
+    $(".project-info-wrapper").first().addClass("info-wrapper-initial-hover");
+    let { titleP, descriptionP } = projectData[Object.keys(projectData)[0]];
+    $("#projectTitlePost").text(titleP);
+    $("#projectDescPost").text(descriptionP);
+    $(".project-info-wrapper").first().one("mouseleave", function() {
+        $(this).removeClass("info-wrapper-initial-hover");
+    })
+
+    $("#intro").scroll(function() {
+        let floaterContainerElTop = document.querySelector("#expDesc").getBoundingClientRect().top;
+        let floaterElBottom = document.querySelector("#expInfoRow").getBoundingClientRect().top + $("#expInfoRow").outerHeight();
+        let stopPoint = floaterContainerElTop + $("#expDesc").outerHeight() - $("#expInfoRow").outerHeight();
+        if(floaterElBottom < window.innerHeight && stopPoint > 0) {
+            $("#expInfoRow").css("top", `${window.innerHeight - floaterElBottom}px`);
+        }
+    })
     //loading page
     $(document).one("mousemove", function() {
+        $("#invisibleSpace").removeClass("active").addClass("inactive")
         anime({
             targets: "#env",
             opacity: [0, 1],
@@ -463,4 +370,9 @@ $(document).ready(function() {
             easing: "easeOutQuad"
         });
     });
+
+    //Media Queries
+    if(window.innerWidth < 600) {
+        $(".info-wrapper").addClass("info-wrapper-initial-hover")
+    }
 });
