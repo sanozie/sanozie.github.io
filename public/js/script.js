@@ -363,6 +363,7 @@ $(document).ready(function() {
     })
     //loading page
     $(document).one("mousemove", function() {
+        $("#invisibleSpace").removeClass("active").addClass("inactive")
         anime({
             targets: "#env",
             opacity: [0, 1],
@@ -370,4 +371,9 @@ $(document).ready(function() {
             easing: "easeOutQuad"
         });
     });
+
+    //Media Queries
+    if(window.innerWidth < 600) {
+        $(".info-wrapper").addClass("info-wrapper-initial-hover")
+    }
 });

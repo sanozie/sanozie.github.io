@@ -645,4 +645,41 @@ a:hover {
 p {
   margin: 0;
 }
+
+#movemouse {
+  opacity: 0.4;
+}
+
+#projectHeaderRow {
+  text-align: right;
+}
+
+@media (max-width: 600px) {
+  #invisibleSpace,
+  #resume,
+  #expDesc,
+  #projectDesc {
+    display: none;
+  }
+  #intro,
+  #projects {
+    padding: 0;
+  }
+  .header-row,
+  #underline,
+  .main-container #tldr {
+    text-align: center;
+    padding-right: 0;
+  }
+  #expScrollers,
+  #projectScrollerP {
+    padding: 0;
+  }
+  #projects .info-wrapper-initial-hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  #projectHeaderRow {
+    text-align: center;
+  }
+}
 /*# sourceMappingURL=styles.css.map */

@@ -4,6 +4,7 @@
 <head>
     <title>Samuel Anozie</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <div class="open_grepper_editor" title="Edit & Save To Grepper"></div>
 
 
@@ -59,13 +60,13 @@
                     <p class="mt-2">First off, a bit of experience 👇</p>
                 </div>
             </div>
-            <div class="row">
-                <div class="info-grouping col-6 py-5">
+            <div class="row justify-content-center">
+                <div class="info-grouping col-md-6 py-5">
                     <div class="row">
                         <div id="experienceList" class="info-list col-12"></div>
                     </div>
                 </div>
-                <div id="expDesc" class="col-6 my-5 position-relative">
+                <div id="expDesc" class="col-md-6 my-5 position-relative">
                     <div id="expInfoRow" class="row info-row position-absolute">
                         <div class="col-12 pl-5">
                             <div class="row">
@@ -81,32 +82,28 @@
                     </div>
 
                 </div>
-                <div id="resume " class="w-100 m-3 ">
+                <div id="resume" class="w-100 m-3 ">
                     <p>You can also view my <u><a href="SamuelAnozie.pdf " target="_blank " style="text-decoration: none; color: inherit ">resume.</a></u></p>
                 </div>
             </div>
-            <div id="tldr" class="row justify-content-end ">
-                <!--more description afterward-->
+            <div id="tldr" class="row justify-content-end">
                 <div class="col-12 ">
                     <div class="row ">
                         <h1 id="tldrText "><span class="outlined-header ">TL;DR:</span></br> <span class="no-enphasis ">I'm a</span> Full-Stack Developer <span class="no-enphasis ">and</span> UI/UX Designer. <span class="no-enphasis ">
                             I love</span> startups. <span class="no-enphasis ">I'll turn </span> 19 <span class="no-enphasis ">eventually 🎉</span>
                         </h1>
                     </div>
-                    <!-- <div class="row ">
-                        <p>I've got the <u id="externalSocialIcons ">socials</u> too.</p>
-                    </div> -->
                 </div>
             </div>
             <div id="expScrollers" class="row justify-content-center my-5 ">
-                <div class="col-3 ">
+                <div class="col-md-3 ">
                     <div class="row ">
                         <div class="col-12 center">
                             <p class="scroller-p scroll-up-arrow ">Scroll to top.</p>
                         </div>
                     </div>
                 </div>
-                <div class=" col-3 ">
+                <div class=" col-md-3 ">
                     <div class="row ">
                         <div class="col-12 center">
                             <p class="scroller-p scroll-down-arrow ">Project preview.</p>
@@ -116,14 +113,16 @@
             </div>
         </div>
         <div id="projects" class="container-fluid main-container">
-            <div class="header-row row ">
-                <div class="col-12 text-right ">
-                    <h1>I've made some sites.</h1>
+            <div id="projectHeaderRow">
+                <div class="header-row row ">
+                    <div class="col-12">
+                        <h1>I've made some sites.</h1>
+                    </div>
                 </div>
-            </div>
-            <div class="row ">
-                <div class="col-12 text-right ">
-                    <p class="mt-2 ">You can take a look here 👇</p>
+                <div class="row ">
+                    <div class="col-12">
+                        <p class="mt-2 ">You can take a look here 👇</p>
+                    </div>
                 </div>
             </div>
             <div class="row ">
@@ -142,14 +141,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="info-grouping col-2 py-5">
+                <div class="info-grouping col-md-2 py-5">
                     <div class="row">
                         <div id="projectList" class="info-list col-12"></div>
                     </div>
                 </div>
             </div>
             <div id="projectScrollerP" class="row justify-content-center mt-5 py-5">
-                <div class="col-3 ">
+                <div class="col-md-3 ">
                     <div class="row ">
                         <div class="col-10 center ">
                             <p class="scroller-p scroll-up-arrow ">Scroll up</p>
@@ -180,9 +179,15 @@
                 </div>
             </div>
         </div>
-        <div id="black " onclick="toggleDisplays( 'outfocus') " class="position-fixed inactive "></div>
-        <div id="invisibleSpace " class="position-fixed inactive "></div>
     </div>
+    <div id="invisibleSpace" class="position-fixed active">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p id="movemouse">Move your mouse</p>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
