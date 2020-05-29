@@ -224,11 +224,14 @@ $(document).ready(function() {
     //enabling tooltips
     //$('[data-toggle="tooltip"]').tooltip();
     //Moving elements
-    $(document).on("mousemove", function(event) {
-        let x = event.pageX;
-        let y = event.pageY;
-        $("#nameContainer").nameMove(x, y);
-    });
+    if(window.innerWidth > 600) {
+        $(document).on("mousemove", function(event) {
+            let x = event.pageX;
+            let y = event.pageY;
+            $("#nameContainer").nameMove(x, y);
+        });
+    }
+    
 
     //loading experience
     Object.keys(experienceData).forEach(key => {
