@@ -681,5 +681,8 @@ p {
   #projectHeaderRow {
     text-align: center;
   }
+  #ayeimsam {
+    background: linear-gradient(-30deg, #be5108, #be5108, #be5108, #ca3954, #ae478a, #755ea8, #2e6ca4, #2e6ca4, #2e6ca4);
+  }
 }
 /*# sourceMappingURL=styles.css.map */
