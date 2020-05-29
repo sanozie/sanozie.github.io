@@ -51,37 +51,42 @@ let projectData = {
     Titan: {
         title: "Titan Robotics 2022",
         logo: "public/imgs/titan2022.png",
-        link: "https://titanrobotics2022",
+        link: "https://titanrobotics2022.com",
         description: "Redesigning robotics team website for business partnerships.",
-        back: "titanback.png"
+        back: "titanback.png",
+        mobile: true
     },
     DIYHacks: {
         title: "DIYHacks",
         logo: "public/imgs/diyhackslogo.png",
         link: "https://diyhacks.tech",
         description: "Dynamic hackathon & project creation for students.",
-        back: "diyhacksback.png"
+        back: "diyhacksback.png",
+        mobile: true
     },
     CA: {
         title: "Code Authority",
         logo: "public/imgs/calogo.png",
-        link: "https://cootbie.com",
+        link: "./CodeAuthority",
         description: "Designed and developed interview website within a week.",
-        back: "caback.png"
+        back: "caback.png",
+        mobile: false
     },
     Bordar: {
         title: "Bordar",
         logo: "public/imgs/bordarlogo.png",
         link: "https://bordar.site",
         description: "Data analytics for curriculum development.",
-        back: "bordarback.png"
+        back: "bordarback.png",
+        mobile: true
     },
     SEVC: {
         title: "SEVC",
         logo: "public/imgs/sevclogo.png",
-        link: "https://packedwithpurpose.gifts",
+        link: "./SEVC",
         description: "Student-driven ventures impacting world sustainability.",
-        back: "sevcback.png"
+        back: "sevcback.png",
+        mobile: false
     }
 }
 
@@ -162,7 +167,22 @@ function projectDataLoad(key, data) {
         </div>
     </div>
     `
-    $("#projectList").append(template);
+    let mobileTemplate = `
+        <div class="info-wrapper project-info-wrapper position-relative" data-project=${key}>
+            <div class="row my-2 justify-content-center">
+                <div class="col-9 h-100 company-logo-col">
+                    <img src="${data.logo}" class="img-fluid company-logo" alt="Company Logo" />
+                </div>
+            </div>
+        </div>
+    `
+
+    if(!data.mobile && window.innerWidth < 600) {
+        $("#projectList").append(mobileTemplate);
+    } else {
+        $("#projectList").append(template);
+    }
+    
 }
 function projectHoverLoad(company) {}
 //Toggling description displays
@@ -243,7 +263,7 @@ $(document).ready(function() {
     })
 
     //On click experience external links
-    $('.info-wrapper').click(function() {
+    $('[data-external-link]').click(function() {
         let link = $(this).attr('data-external-link');
         window.open(link, '_blank');
     });
