@@ -38,14 +38,19 @@
 </head>
 
 <body>
-    <div id="env">
+    <div id="env" class="position-relative">
+        <div id="scroller-overlay" class="d-flex flex-row position-fixed w-100 justify-content-between">
+            <div class="scroller-wrap scroller-wrap-left">
+                <img src="public/imgs/smallarrow.png" class="img-fluid scroll-up-arrow smallArrow">
+            </div>
+            <div class="scroller-wrap scroller-wrap-right">
+                <img src="public/imgs/smallarrow.png" class="img-fluid scroll-down-arrow smallArrow">
+            </div>
+        </div>
         <div id="landing" class=" position-relative center">
             <div id="nameContainer" class="container-fluid">
                 <div class="row justify-content-center">
                     <h1 id="ayeimsam">Aye I'm Sam.</h1>
-                </div>
-                <div class="row justify-content-center">
-                    <img src='/public/imgs/smallarrow.svg' class="img-fluid scroll-down-arrow smallArrow" />
                 </div>
             </div>
         </div>
@@ -90,24 +95,8 @@
                 <div class="col-12 ">
                     <div class="row ">
                         <h1 id="tldrText "><span class="outlined-header ">TL;DR:</span></br> <span class="no-enphasis ">I'm a</span> Full-Stack Developer <span class="no-enphasis ">and</span> UI/UX Designer. <span class="no-enphasis ">
-                            I love</span> startups. <span class="no-enphasis ">I'll turn </span> 19 <span class="no-enphasis ">eventually 🎉</span>
+                            I love</span> startups <span class="no-enphasis "> because I can contribute in more ways than one.</span>
                         </h1>
-                    </div>
-                </div>
-            </div>
-            <div id="expScrollers" class="row justify-content-center my-5 ">
-                <div class="col-md-3 ">
-                    <div class="row ">
-                        <div class="col-12 center">
-                            <p class="scroller-p scroll-up-arrow ">Scroll to top.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class=" col-md-3 ">
-                    <div class="row ">
-                        <div class="col-12 center">
-                            <p class="scroller-p scroll-down-arrow ">Project preview.</p>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -147,16 +136,7 @@
                     </div>
                 </div>
             </div>
-            <div id="projectScrollerP" class="row justify-content-center mt-5 py-5">
-                <div class="col-md-3 ">
-                    <div class="row ">
-                        <div class="col-10 center ">
-                            <p class="scroller-p scroll-up-arrow ">Scroll up</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="socialericons" class="row justify-content-center my-5">
+            <div id="socialericons" class="row justify-content-center my-5 pt-5">
                 <div class="col-1 mx-3 center">
                     <a href="https://github.com/sanozie" alt="Github">
                         <img src="/public/imgs/socialericons/github.png" class="img-fluid w-75 socialericon" />
@@ -168,7 +148,7 @@
                     </a>
                 </div>
                 <div class="col-1 mx-3 center">
-                    <a href="https://vm.tiktok.com/K2gTaJ/" alt="TikTok">
+                    <a href="https://vm.tiktok.com/JRjgEsk/" alt="TikTok">
                         <img src="/public/imgs/socialericons/tiktok.png" class="img-fluid w-75 socialericon" />
                     </a>
                 </div>

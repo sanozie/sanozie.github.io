@@ -100,6 +100,10 @@ $primaryDark: "#2e6ca4";
     right: -50px;
 }
 
+.poster {
+    @include poster;
+}
+
 //Misc
 body {
     overflow: hidden;
@@ -194,35 +198,49 @@ a:hover {
     width: 50%;
 }
 
+#scroller-overlay {
+    z-index: 10;
+    bottom: 0;
+    mix-blend-mode: luminosity;
+    -webkit-mix-blend-mode: luminosity;
+    pointer-events: none;
+}
+
+.scroller-wrap {
+    min-width: 60px;
+    min-height: 60px;
+    background-color: #2e6da48a;
+}
+
+.scroller-wrap-left {
+    border-top-right-radius: 50%;
+}
+
+.scroller-wrap-right {
+    border-top-left-radius: 50%;
+}
+
 .scroll-up-arrow,
 .scroll-down-arrow {
-    opacity: 0.1;
+    fill: white;
+    opacity: 0.3;
     transition: 0.2s ease-out;
     cursor: pointer;
+    max-height: 40px;
+    pointer-events: all;
+    display: flex;
+    align-self: center;
+    margin: auto;
+    margin-top: 10px;
 }
 
 .scroll-up-arrow:hover,
 .scroll-down-arrow:hover {
-    opacity: 0.3;
+    opacity: 0.4;
 }
 
-.smallerArrow {
-    width: 100%;
-}
-
-.scroller-p {
-    opacity: 0.3;
-    cursor: pointer;
-    font-size: calc(0.6rem + 1vw);
-    transition: 0.2 ease-out;
-}
-
-.scroller-p:hover {
-    opacity: 0.6;
-}
-
-#expScrollers {
-    padding-right: calc(4rem + 8vw);
+.scroll-up-arrow {
+    transform: rotate(180deg)
 }
 
 //Styles

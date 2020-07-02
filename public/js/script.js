@@ -208,6 +208,7 @@ function toggleDisplays(toggleType) {
 $(document).ready(function() {
     //no Scrolling for this site!
     disableScrolling();
+    let positionNum = 0;
     $(".scroll-down-arrow").click(function() {
         enableScrolling();
         let position = $(window).scrollTop() + $(window).height();
